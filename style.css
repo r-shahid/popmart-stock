@@ -88,6 +88,9 @@ body {
   width: fit-content;
   text-align: center;
 }
+.each-item img {
+    max-width: 100px;
+}
 
 /* .labubu-title{
     border: 2px solid black;
@@ -133,6 +136,7 @@ body {
   overflow: hidden;
   background-color: #f1f1f1;
 
+  padding-bottom: 20px;
   /* transition: max-height 0.2s ease-out; */
 }
 
@@ -141,11 +145,19 @@ body {
     color: var(--magenta);
 }
 
-.Labubus {
-    /* border: 2px solid black;  */
-    /* background-color: red; */
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-size: 100px; */
+.inventory .each-item {
+    font-family: LazyDog;
+    font-size: 1rem;
+    color: var(--teal);
+    max-width: 100px;
+}
+
+.inventory .each-item .quantity {
+    font-size: .7rem;
+}
+
+.inventory .monsters .the_monsters.content .each-item{
+    max-width: unset;
 }
 
 .contact-us {
