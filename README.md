@@ -21,10 +21,10 @@ HTML, CSS, JavaScript, Google Sheets API v4
 * Responsive design
 
 ## Post MVP
-* Pull stock data from external API
+- [ ] Pull stock data from external API
     * Google Sheets
-* Find higher quality product images
-* Custom form submission success page
+- [ ] Find higher quality product images
+- [ ] Custom form submission success page
 
 ## Design Elements
 ### Colors
