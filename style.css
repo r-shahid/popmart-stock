@@ -6,7 +6,6 @@
   --teal: #5F7DA6;
 }
 
-/* fonts Shrikhand and Lazydog */
 @font-face {
   font-family: LazyDog;
   src: url("./media/Lazydog.otf");
@@ -17,22 +16,17 @@ body {
 }
 
 .main {
-  /* background-color: var(--pink); */
   width: 80vw;
   margin: auto;
   text-align: center;
-  /* padding-top: 0px; */
 }
 
 .logo {
   width: 400px;
-  /* border: 2px solid black; */
-  /* object-fit: cover; */
 }
 
 .info {
-  /* border: 2px solid black; */
-  width: 500px;
+  max-width: 500px;
   margin: auto;
   font-family: LazyDog;
 }
@@ -48,9 +42,7 @@ body {
 }
 
 .info :not(.next-show, .next-show span){
-    /* text-transform: uppercase; */
     color: var(--purple);
-    /* font-size: 12px; */
     font-size: 1rem;
     padding-top: 10px;
 }
@@ -66,10 +58,7 @@ body {
 .inventory h1 {
     text-align: center;
     font-family: "Shrikhand", serif;
-    letter-spacing: 3px;
-    font-size: 40px;
     color: var(--magenta);
-    /* text-shadow: 2px 3px var(--dark-magenta); */
 }
 
 .inventory .IP > div {
@@ -77,16 +66,12 @@ body {
 }
 
 .inventory .IP .full-set {
-  /* text-align: center; */
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* set wrap settings so that mobile shows 2 rows of 3 items each*/
 }
 
 .each-item {
-  /* border: 2px solid ; */
   width: fit-content;
   text-align: center;
 }
@@ -94,52 +79,34 @@ body {
     max-width: 100px;
 }
 
-/* .labubu-title{
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-} */
 
 .inventory h2, .inventory h3, .contact-us .contact-title {
     font-family: 'Shrikhand', serif;
     letter-spacing: 1px;
-    /* color: var(--magenta); */
 }
 
 .collapsible {
   background-color: var(--purple);
   color: var(--pink);
   text-transform: uppercase;
-  /* color: red; */
-  /* color: #444; */
   cursor: pointer;
   padding-left: 18px;
   margin-bottom: 0px;
-  /* margin-top: 0px; */
-  /* width: 100%; */
-  /* float: right; */
   border: none;
   text-align: left;
   outline: none;
   font-size: 2rem;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
-  /* background-color: #cc */
   cursor: pointer;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
-  /* padding: 0 18px; */
-  /* display: none; */
   overflow: hidden;
   background-color: #f1f1f1;
-
   padding-bottom: 20px;
-  /* transition: max-height 0.2s ease-out; */
 }
 
 .inventory h3 {
@@ -163,44 +130,32 @@ body {
 }
 
 .contact-us {
-  /* border: 2px solid black; */
   padding: 20px;
-  width: 450px;
+  max-width: 450px;
   margin: auto;
   text-align: center;
   font-family: LazyDog;
   color: var(--teal);
 }
 .contact-title {
-  /* font-size: 20px; */
   color: var(--magenta);
-  /* text-shadow: 2px 1px var(--dark-magenta); */
   text-align: center;
 }
 .contact-form {
   border: 2px solid var(--teal);
-  width: 400px;
+  max-width: 400px;
   margin: 20px auto;
-  height: 400px;
   color: var(--purple);
-  /* text-align: left; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
   padding: 20px;
 }
-/* .contact-form p:nth-child(1), .contact-form p:nth-child(2) */
 .contact-form p {
-    /* display: flex; */
     width: 100%;
     text-align: left;
     font-size: 1rem;
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
-    /* flex-grow: 2; */
-    /* border: 2px solid black; */
-    /* width: 200px; */
 }
 .contact-form p input, .contact-form p textarea {
     width: 70%;
@@ -210,22 +165,15 @@ body {
     color: var(--teal);
 }
 .contact-form p textarea {
-    /* width: unset; */
-    /* max-width: 100%; */
     width: 98%;
     margin-top: 10px;
     resize: none;
-    /* margin: 10px 0px 10px 10px; */
-    /* margin-left: 60px; */
-    /* float: right; */
 
 }
 .contact-form p button {
-    /* text-align: right; */
     float: right;
     background-color: var(--pink);
     padding: 5px 10px;
-    /* border-radius: 15px; */
     font-family: LazyDog;
     font-size: 1rem;
     color: var(--teal);
@@ -236,7 +184,6 @@ body {
     cursor: pointer;
 }
 .social-icons {
-  /* background-color:red; */
   display: flex;
   justify-content: flex-end;
 }
@@ -273,7 +220,6 @@ body {
 
 footer {
     font-family: LazyDog;
-    /* font-family: "Shrikhand", serif; */
     letter-spacing: 1px;
   text-align: center;
   padding: 20px;
@@ -284,4 +230,17 @@ footer a{
     text-decoration: none;
 }
 
-/* items should be 3 by 3 once too small to be 6 in a row */
+
+
+
+@media screen and (max-width: 450px) {
+    .main {
+        width: 100%;
+    }
+    .each-item img {
+        max-width: 90px;
+    }
+    .contact-us .contact-form p label {
+        font-size: .9rem;
+    }
+}
