@@ -25,6 +25,7 @@ HTML, CSS, JavaScript, Google Sheets API v4
     * Google Sheets
 - [ ] Find higher quality product images
 - [ ] Custom form submission success page
+- [ ] Process payments
 
 ## Design Elements
 ### Colors
