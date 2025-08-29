@@ -24,6 +24,7 @@ HTML, CSS, JavaScript, Google Sheets API v4
 * Pull stock data from external API
     * Google Sheets
 * Find higher quality product images
+* Custom form submission success page
 
 ## Design Elements
 ### Colors

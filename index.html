@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   </head>
   <body>
     <div class="main">
@@ -31,7 +33,7 @@
         </div>
         <div>
           For inquiries about pricing or to arrange local pickup in the New
-          York/New Jersey area, please <a href="">contact us</a>.
+          York/New Jersey area, please <a href="#contact_form">contact us</a>.
         </div>
       </div>
 
@@ -149,10 +151,9 @@
             </div>
             </div>
 
-            <div class="monsters">
+            <!-- <div class="monsters">
                 <h2 class="collapsible">The Monsters - misc.</h2>
     
-                <!-- <button type="button" class="collapsible">v</button> -->
                 <div class="the_monsters IP content">
                 <div>
                     <h3>Fall In Wild</h3>
@@ -182,9 +183,9 @@
                 </div>
                 <div></div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="hacipupus">
+            <!-- <div class="hacipupus">
                 <h2 class="collapsible">Hacipupu</h2>
                 <div class="hacipupu IP content">
                 <div>
@@ -217,9 +218,9 @@
                         </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="wacky-marts">
+            <!-- <div class="wacky-marts">
                 <h2 class="collapsible">Wacky Mart</h2>
                 <div class="wacky-mart IP content">
                 <div>
@@ -252,9 +253,9 @@
                         </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="checkmates">
+            <!-- <div class="checkmates">
                 <h2 class="collapsible">Checkmate</h2>
                 <div class="checkmate IP content">
                 <div>
@@ -287,9 +288,9 @@
                         </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="hacipupus">
+            <!-- <div class="hacipupus">
                 <h2 class="collapsible">Hacipupu</h2>
                 <div class="hacipupu IP content">
                 <div>
@@ -322,7 +323,7 @@
                         </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -332,14 +333,27 @@
     </div>
 </div>
 
-      <div class="contact-us">
-        <div class="contact-title">Contact Us</div>
-        To get in touch with us, you can DM us on Instagram, send us an email,
+      <div class="contact-us" id="contact_form">
+        <h2 class="contact-title">Contact Us</h2>
+        To get in touch, please DM us on Instagram, send us an email,
         or write us a message using the contact form below:
-        <div class="contact-form">contact form</div>
+            <form class="contact-form" method="post" name="contact" netlify>
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <label>Message: <br/> <textarea name="message" rows="10"></textarea></label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
+              </form>
         <div class="social-icons">
-          <img src="https://placehold.co/50x50.png" />
-          <img src="https://placehold.co/50x50.png" />
+            <a href="https://instagram.com/azeemo.tcg"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@azeemo.tcg"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </div>
