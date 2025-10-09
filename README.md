@@ -8,22 +8,22 @@ I made this website as an organizational tool to keep track of Popmart inventory
 
 ## Technologies
 
-HTML, CSS, JavaScript, Google Sheets API v4
+HTML, CSS, JavaScript
 
-## Wireframes
+## Wireframe
 <img src="./media/wireframe.png" width=400px>
 
 
 ## MVP
 
-* Hardcoded item quantities
-* Collapsible sections
-* Responsive design
+- [x] Hardcoded item quantities
+- [x] Collapsible sections
+- [x] Responsive design
 
 ## Post MVP
 - [ ] Pull stock data from external API
     * Google Sheets
-- [ ] Find higher quality product images
+- [x] Find higher quality product images
 - [ ] Custom form submission success page
 - [ ] Process payments
 
